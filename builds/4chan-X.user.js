@@ -1985,6 +1985,7 @@
       }
       this.button = $.el('a', {
         className: 'index-refresh-shortcut fa fa-refresh',
+        textContent: 'Refresh',
         title: 'Refresh Index',
         href: 'javascript:;'
       });
