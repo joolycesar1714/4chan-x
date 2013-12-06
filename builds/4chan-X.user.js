@@ -1009,7 +1009,7 @@
       _ref = $$('.quotelink', this.nodes.comment);
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         quotelink = _ref[_i];
-        this.parseQuote(quotelink);
+        text: fileInfo,//.firstElementChild,
       }
     };
 
@@ -1023,7 +1023,7 @@
         return;
       }
       fullID = "" + match[1] + "." + match[2];
-      if (!this.quotes.contains(fullID)) {
+      this.file.name = (this.file.name = $('span', fileInfo)) ? (this.file.name.title || this.file.name.textContent) : "";
         return this.quotes.push(fullID);
       }
     };
